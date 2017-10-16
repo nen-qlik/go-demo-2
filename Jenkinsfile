@@ -35,6 +35,7 @@ pipeline {
       }
       steps {
         dockerRelease("go-demo-2", env.DOCKER_HUB_USER)
+        dockerRelease("go-demo-2-test", env.DOCKER_HUB_USER)
       }
     }
     stage("deploy") {
